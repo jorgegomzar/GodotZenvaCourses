@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcfoiund7vfke"]
+
+[ext_resource type="Material" uid="uid://bjmw7hrdqe3uw" path="res://Material/MaterialPink.tres" id="1_a74xt"]
+[ext_resource type="Material" uid="uid://d3hor26770qov" path="res://Material/MaterialPlayer.tres" id="2_nnlqp"]
+[ext_resource type="Material" uid="uid://schupykswp46" path="res://Material/MaterialBlue.tres" id="3_kp78d"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_c8trf"]
+
+[node name="TestingMaterials" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.47119, 0, 0)
+material_override = ExtResource("1_a74xt")
+mesh = SubResource("SphereMesh_c8trf")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.957143, 0, 0.289617, 0, 1, 0, -0.289617, 0, -0.957143, 1.50128, 0, 0)
+material_override = ExtResource("2_nnlqp")
+mesh = SubResource("SphereMesh_c8trf")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+material_override = ExtResource("3_kp78d")
+mesh = SubResource("SphereMesh_c8trf")
